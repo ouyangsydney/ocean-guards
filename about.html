@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://openclipart.org/image/800px/25875"
+    />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Ocean Guards</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Ocean Guards" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <!-- webpage starts here -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      width: 50%;
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 0 0.75rem;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+    a.disable{
+      pointer-events:none;
+      color:gray !important;
+    }
+    a.button {
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 651px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+      .row{
+        display:flex;
+        flex:row;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="about-section">
+      <h1>About Us Page</h1>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img
+            src="https://i.natgeofe.com/k/41de528e-c521-4a29-ade6-d385d9a4e5f7/sea-otter-closeup_4x3.jpg"
+            alt="Sea Otters"
+          />
+          <div class="container">
+            <h2>Sydney</h2>
+            <p class="title">Research</p>
+            <p>
+              <a href="https://www.montereybayaquarium.org/animals/animals-a-to-z/sea-otter?gclid=Cj0KCQiAzMGNBhCyARIsANpUkzPJu7_Om_XXGMMpKc5a4h2Z3ciV-vFCg4VcjGd39V6X3Ik5Ic3VAp0aAu6nEALw_wcB" target="_blank" class="button text-white"
+                >Learn more about sea otters</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img
+            src="https://cdn.glitch.me/65c41d2c-ba11-4911-afe2-d951ef647a6f%2F793b5b21-897c-453d-81ed-ddee407b2198.image.png?v=1638413381481"
+            alt="Cat figure"
+          />
+          <div class="container">
+            <h2>Sarai</h2>
+            <p class="title">Research</p>
+            <p></p>
+            <p></p>
+            <p>
+              <a href="https://www.treehugger.com/easy-ways-reduce-your-plastic-waste-today-4858814" target="_blank" class="button text-white">Learn more about solutions</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img
+            src="https://cdn.glitch.me/fe977703-37a3-4623-9a12-86955c3af5b5%2F20211128_075957.jpg?v=1639015225682"
+            alt="Seagull"
+            style="width:100%"
+          />
+          <div class="container">
+            <h2>Rigoberto</h2>
+            <p class="title">Designer Idea</p>
+            <p></p>
+            <p></p>
+            <p><a href="https://onekindplanet.org/animal/seagull/" target="_blank" class="button text-white">Learn More about Seagulls</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="sydney-footer">
+      <div clas="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="./index.html">Home</a>
+
+          <a class="disable" href="./about.html">About</a>
+
+          <a href="./sarai.html">Solutions</a>
+
+          <a href="./sydney.html">Related Organizations</a>
+        </p>
+        <p class="text-center">&copy; 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>

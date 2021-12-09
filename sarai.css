@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+footer {
+  background-color: #f7fafc;
+}
+
+._container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+/*nav*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0.8rem;
+}
+
+nav h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+ul a {
+  text-decoration: none;
+  color: inherit;
+}
+ul li {
+  margin-left: 1rem;
+  font-size: 1.275rem;
+  cursor: pointer;
+}
+
+.banner {
+  padding: 5rem 0;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+.banner span {
+  display: block;
+  color: #03A9f4;
+}
+.banner p {
+  font-size: 1.5rem;
+  opacity: 0.4;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.banner button {
+  background-color: #03a9f4;
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.375rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.banner button:hover {
+  opacity: 0.9;
+}
+/*main*/
+main {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+.top {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.top h2 {
+  font-size: 2.25rem;
+}
+
+.top p {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  opacity: 0.4;
+  margin-top: 1rem;
+  padding: 0 5rem;
+}
+/*post*/
+.post {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+.col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.col h3 {
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.col p {
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  opacity: 0.4;
+  margin-top: 1.5rem;
+}
+.col img {
+  margin: 1.5rem 1rem;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.post.reverse {
+  flex-direction: row-reverse;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #e6f6fe;
+  border-radius: 0.375rem;
+}
+
+.cta p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.cta span {
+  display: block;
+  color: #03a9f4;
+}
+.cta button {
+  font-size: 1.125rem;
+  padding: 0.75rem 1rem;
+  background-color: #03a9f4;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+.cta button:hover {
+  opacity: 0.9;
+}
+
+._helper {
+  text-align: center;
+  opacity: 0.4;
+  color: grey;
+  margin: 0 1rem;
+}
+.thanksto {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+footer ul {
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
+footer ._social {
+  margin: 1.15rem 0;
+  text-align: center;
+}
+
+footer ._social a {
+  font-size: 1.5rem;
+  color: #4b4c4d;
+  margin: 0 0.3rem;
+  opacity: 0.75;
+}
+footer ._social a:hover {
+  opacity: 0.2;
+}
+footer p {
+  text-align: center;
+  opacity: 0.4;
+}
+
+@media (max-width: 651px) {
+  .top {
+    padding: 0;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+  .post.reverse {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .cta {
+    padding: 1rem;
+    text-align: center;
+    flex-direction: column;
+  }
+  .cta p {
+    margin-bottom: 1rem;
+  }
+}

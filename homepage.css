@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/*body*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+footer {  height:100vh;
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position:center center;
+  position:relative;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 .75rem;
+}
+
+/*nav*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0.8rem;
+}
+
+nav h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+.logo img{
+  width:100px;
+  float:left;
+  height:auto;
+  cursor:pointer;
+  paddin:1px;
+  
+}
+.logo:hover{
+  opacity:0.8;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+a {
+    color:#2E76CF;
+}
+a.disable{
+  color:gray;
+  pointer-events:none;
+}
+a:hover {
+    color:cyan;
+}
+
+ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+ul li {
+  margin-left: 1rem;
+  margin-right:0.9rem;
+  font-size: 1.275rem;
+  cursor: pointer;
+}
+
+.banner {
+  padding: 5rem 0;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+.banner h1 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  color:#ADD8E6;
+}
+.banner span {
+  display: block;
+  color: #6698FF;
+  font-family: 'Cinzel', serif;
+}
+.banner p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  color:#fff;
+}
+.banner button {
+  background-color: white;
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.375rem;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+.banner button:hover {
+  opacity: 0.9;
+  background-color:black;
+  color:white;
+}
+
